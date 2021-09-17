@@ -6,7 +6,7 @@ import * as S from './styles'
 
 import { gaEvent } from 'utils/ga'
 import Container from 'components/Container'
-import { LogoProps, sectionHeroProps } from 'types/api'
+import { LogoProps, SectionHeroProps } from 'types/api'
 import { getImageUrl } from 'utils/getImageUrl'
 
 const onClick = () =>
@@ -14,7 +14,7 @@ const onClick = () =>
 
 type Props = {
   logo: LogoProps
-  sectionHero: sectionHeroProps
+  sectionHero: SectionHeroProps
 }
 
 const SectionHero = ({ logo, sectionHero }: Props) => (

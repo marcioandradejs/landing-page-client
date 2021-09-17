@@ -3,7 +3,7 @@ export type LogoProps = {
   url: string
 }
 
-export type sectionHeroProps = {
+export type SectionHeroProps = {
   title: string
   description: string
   button: {
@@ -16,7 +16,17 @@ export type sectionHeroProps = {
   }
 }
 
+export type SectionAboutProjectProps = {
+  title: string
+  description: string
+  image: {
+    alternativeText: string
+    url: string
+  }
+}
+
 export type LandingPageProps = {
   logo: LogoProps
-  sectionHero: sectionHeroProps
+  sectionHero: SectionHeroProps
+  sectionAboutProject: SectionAboutProjectProps
 }
