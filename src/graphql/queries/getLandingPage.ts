@@ -1,4 +1,10 @@
 const GET_LANDING_PAGE = /* GraphQL */ `
+  # Criar query no playground
+  # Copiar e colar no nosso arquivo de queries
+  # Ir no types/api e tipar os novos dados
+  # Ir no index, passar o dado abaixo
+  # Ir no componente e usar os dados dinâmicos
+
   fragment logo on LandingPage {
     logo {
       alternativeText
@@ -85,6 +91,25 @@ const GET_LANDING_PAGE = /* GraphQL */ `
     }
   }
 
+  fragment sectionAboutUs on LandingPage {
+    sectionAboutUs {
+      title
+      authors {
+        photo {
+          alternativeText
+          url
+        }
+        name
+        role
+        socialLinks {
+          title
+          url
+        }
+        description
+      }
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo
@@ -95,6 +120,7 @@ const GET_LANDING_PAGE = /* GraphQL */ `
       ...sectionModules
       ...sectionAgenda
       ...pricingBox
+      ...sectionAboutUs
     }
   }
 `
