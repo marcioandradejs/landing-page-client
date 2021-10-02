@@ -8,12 +8,11 @@ const Footer = () => (
   <S.Wrapper>
     <Container>
       <p>
-        Desenvolvido por{' '}
-        <a href="https://willianjusten.com.br/">Willian Justen </a>e
-        <a href="https://guilouro.dev"> Guilherme Louro</a>
+        LandingPage de um curso feito por{' '}
+        <a href="https://marcioandradeblog.netlify.app/">Marcio Andrade</a>
       </p>
       <p>
-        Design por <a href="https://dribbble.com/vmarcosp">Marcos Oliveira</a>
+        O Back-End foi feito via <a href="https://strapi.io/">Strapi CMS</a>
       </p>
     </Container>
   </S.Wrapper>
