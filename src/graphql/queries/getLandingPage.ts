@@ -132,6 +132,10 @@ const GET_LANDING_PAGE = /* GraphQL */ `
         question
         answer
       }
+      newQuestion {
+        title
+        description
+      }
     }
   }
 

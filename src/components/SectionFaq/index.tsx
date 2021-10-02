@@ -3,11 +3,10 @@ import React from 'react'
 import Container from 'components/Container'
 import Heading from 'components/Heading'
 
-import faq from './content'
 import * as S from './styles'
 import { SectionFaqProps } from 'types/api'
 
-const SectionFaq = ({ title, questions }: SectionFaqProps) => (
+const SectionFaq = ({ title, questions, newQuestion }: SectionFaqProps) => (
   <S.Wrapper>
     <S.Content>
       <Container>
@@ -23,17 +22,10 @@ const SectionFaq = ({ title, questions }: SectionFaqProps) => (
         </S.Questions>
 
         <S.ExtraQuestion>
-          <Heading lineBottom>Eu tenho outra dúvida!</Heading>
-          <p>
-            Sem problemas! Você pode acessar qualquer uma das{' '}
-            <a
-              href="https://marcioandradeblog.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              minhas redes sociais
-            </a>
-          </p>
+          <Heading lineBottom>{newQuestion.title}</Heading>
+          <S.ExtraQuestionText
+            dangerouslySetInnerHTML={{ __html: newQuestion.description }}
+          />
         </S.ExtraQuestion>
       </Container>
     </S.Content>

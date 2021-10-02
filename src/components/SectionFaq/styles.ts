@@ -58,3 +58,12 @@ export const ExtraQuestion = styled.div`
     `}
   `}
 `
+export const ExtraQuestionText = styled.div`
+  ${({ theme }) => css`
+    a {
+      border-bottom: 1px solid ${theme.colors.secondary};
+      color: ${theme.colors.secondary};
+      text-decoration: none;
+    }
+  `}
+`
