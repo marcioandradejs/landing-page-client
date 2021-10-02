@@ -3,17 +3,12 @@ import React from 'react'
 import Container from 'components/Container'
 
 import * as S from './styles'
+import { SectionFooterProps } from 'types/api'
 
-const Footer = () => (
+const Footer = ({ description }: SectionFooterProps) => (
   <S.Wrapper>
     <Container>
-      <p>
-        LandingPage de um curso feito por{' '}
-        <a href="https://marcioandradeblog.netlify.app/">Marcio Andrade</a>
-      </p>
-      <p>
-        O Back-End foi feito via <a href="https://strapi.io/">Strapi CMS</a>
-      </p>
+      <div dangerouslySetInnerHTML={{ __html: description }} />
     </Container>
   </S.Wrapper>
 )

@@ -112,6 +112,10 @@ export type SectionFaqProps = {
   }
 }
 
+export type SectionFooterProps = {
+  description: string
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   sectionHero: SectionHeroProps
@@ -124,4 +128,5 @@ export type LandingPageProps = {
   sectionAboutUs: SectionAboutUsProps
   sectionReviews: SectionReviewsProps
   sectionFaq: SectionFaqProps
+  sectionFooter: SectionFooterProps
 }
