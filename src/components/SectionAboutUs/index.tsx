@@ -20,7 +20,7 @@ const SectionAboutUs = ({ title, authors }: SectionAboutUsProps) => (
           photo={profile.photo}
           socialLinks={profile.socialLinks}
           description={profile.description}
-          id={0}
+          id={profile.id}
         />
       ))}
     </S.Content>
