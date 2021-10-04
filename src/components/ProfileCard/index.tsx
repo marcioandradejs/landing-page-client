@@ -13,14 +13,15 @@ const icons = {
   Dribbble: <FaDribbble />
 }
 
-const ProfileCard: React.FC<Author> = ({
+const ProfileCard = ({
   name,
-  role,
+  id,
   photo,
-  socialLinks,
-  description
-}) => (
-  <S.Card key={name}>
+  description,
+  role,
+  socialLinks
+}: Author) => (
+  <S.Card key={id}>
     <S.Image
       src={getImageUrl(photo.url)}
       alt={photo.alternativeText}

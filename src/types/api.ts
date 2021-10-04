@@ -76,6 +76,7 @@ export type SocialLink = {
 export type Author = {
   photo: Image
   name: string
+  id: number
   role: string
   socialLinks: SocialLink[]
   description: string

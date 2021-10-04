@@ -100,6 +100,7 @@ const GET_LANDING_PAGE = /* GraphQL */ `
           url
         }
         name
+        id
         role
         socialLinks {
           title

@@ -14,12 +14,13 @@ const SectionAboutUs = ({ title, authors }: SectionAboutUsProps) => (
     <S.Content>
       {authors.map((profile) => (
         <ProfileCard
-          key={profile.name}
+          key={profile.id}
           name={profile.name}
           role={profile.role}
           photo={profile.photo}
           socialLinks={profile.socialLinks}
           description={profile.description}
+          id={0}
         />
       ))}
     </S.Content>
